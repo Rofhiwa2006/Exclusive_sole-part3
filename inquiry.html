@@ -1,0 +1,63 @@
+
+<section class="form-container">
+    <h2>Send Us a Sneaker Enquiry</h2>
+
+    <form id="enquiry-form">
+
+        <div class="form-field">
+            <label for="customer-name">Full Name</label>
+            <input type="text" id="customer-name"
+                name="name" required minlength="2">
+            <span class="field-error"></span>
+        </div>
+
+        <div class="form-field">
+            <label for="customer-email">Email Address</label>
+            <input type="email" id="customer-email"
+                name="email" required>
+            <span class="field-error"></span>
+        </div>
+
+        <div class="form-field">
+            <label for="shoe">Sneaker Name</label>
+            <input type="text" id="shoe"
+                name="shoe" required>
+            <span class="field-error"></span>
+        </div>
+
+        <div class="form-field">
+            <label for="size">Shoe Size</label>
+            <select id="size" name="size" required>
+                <option value="">Select size</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <span class="field-error"></span>
+        </div>
+
+        <div class="form-field">
+            <label for="requestType">Enquiry Type</label>
+            <select id="requestType"
+                name="requestType" required>
+                <option value="">Select enquiry</option>
+                <option>Price enquiry</option>
+                <option>Sneaker availability</option>
+                <option>Global sourcing</option>
+            </select>
+            <span class="field-error"></span>
+        </div>
+
+        <button type="submit">Submit Enquiry</button>
+
+        <p id="enquiry-result" aria-live="polite" hidden></p>
+
+    </form>
+</section>
