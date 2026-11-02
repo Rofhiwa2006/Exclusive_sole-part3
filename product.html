@@ -1,14 +1,22 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse authentic sneakers at Exclusive Sole with search and sorting.">
+<title>Products | Exclusive Sole</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><a class="brand" href="index.html">EXCLUSIVE <span>SOLE</span></a><p>Authenticity. Individuality. Exclusive style.</p></header>
+<nav class="site-nav"><a href="index.html">Home</a><a href="product.html">Products</a><a href="services.html">Services</a><a href="aboutus.html">About Us</a><a href="inquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav>
+<main id="main-content">
+<section class="page-intro"><p class="eyebrow">THE CATALOGUE</p><h1>All sneakers</h1><p>Search, sort and enquire about your pair.</p></section>
 <section class="product-tools">
     <h2>Find Your Perfect Sneakers</h2>
-
     <label for="product-search">Search sneakers:</label>
-    <input
-        type="search"
-        id="product-search"
-        placeholder="Search by sneaker name..."
-    >
-
+    <input type="search" id="product-search" placeholder="Search by sneaker name...">
     <label for="product-sort">Sort products:</label>
     <select id="product-sort">
         <option value="default">Default order</option>
@@ -16,11 +24,12 @@
         <option value="price-asc">Price: Low to High</option>
         <option value="price-desc">Price: High to Low</option>
     </select>
-
-    <p id="product-count" aria-live="polite">
-        All products
-    </p>
-    <p id="no-products" hidden>
-        No sneakers found. Try another search.
-    </p>
+    <p id="product-count" aria-live="polite">All products</p>
+    <p id="no-products" hidden>No sneakers found. Try another search.</p>
 </section>
+<div class="product-grid" id="product-grid"></div>
+</main>
+<footer><p>&copy; 2026 Exclusive Sole. All rights reserved.</p></footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
