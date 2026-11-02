@@ -1,0 +1,26 @@
+
+<section class="product-tools">
+    <h2>Find Your Perfect Sneakers</h2>
+
+    <label for="product-search">Search sneakers:</label>
+    <input
+        type="search"
+        id="product-search"
+        placeholder="Search by sneaker name..."
+    >
+
+    <label for="product-sort">Sort products:</label>
+    <select id="product-sort">
+        <option value="default">Default order</option>
+        <option value="name-asc">Name: A to Z</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+    </select>
+
+    <p id="product-count" aria-live="polite">
+        All products
+    </p>
+    <p id="no-products" hidden>
+        No sneakers found. Try another search.
+    </p>
+</section>
